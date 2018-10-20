@@ -12,7 +12,7 @@ const someReducer = (state = {}, action) => {
   return state;
 };
 
-const store = createStore(someReducer, +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(someReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 const appRoot = document.querySelector('#root');
 ReactDOM.render(
